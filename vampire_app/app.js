@@ -119,6 +119,46 @@ const vampire4 = {
 /////////////////////////////////////////////////
 // ### Select by comparison
 
+// Find females
+// db.find({ gender: 'f' }, (err, foundVampires) => {
+//   if (err) return console.log(err);
+
+//   console.log(foundVampires);
+//   process.exit();
+// });
+
+// Find > 500 victims
+// db.find({ victims: { $gt: 500 } }, (err, foundVampires) => {
+//   if (err) return console.log(err);
+
+//   console.log(foundVampires);
+//   process.exit();
+// });
+
+// Find <= 150 victims
+// db.find({ victims: { $lte: 150 } }, (err, foundVampires) => {
+//   if (err) return console.log(err);
+
+//   console.log(foundVampires);
+//   process.exit();
+// });
+
+// have a victim count is not equal to 210234
+// db.find({ victims: { $ne: 210234 } }, (err, foundVampires) => {
+//   if (err) return console.log(err);
+
+//   console.log(foundVampires);
+//   process.exit();
+// });
+
+// have greater than 150 AND fewer than 500 victims
+// db.find({ victims: { $gt: 150, $lt: 500 } }, (err, foundVampires) => {
+//   if (err) return console.log(err);
+
+//   console.log(foundVampires);
+//   process.exit();
+// });
+
 /////////////////////////////////////////////////
 // ### Select by exists or does not exist
 
