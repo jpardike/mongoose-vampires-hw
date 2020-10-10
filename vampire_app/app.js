@@ -264,7 +264,7 @@ const vampire4 = {
 // });
 
 // love fancy cloaks but not if they also love either top hats or virgin blood * Hint-You will also have to use $nin *
-// db.find({loves: 'fancy cloaks', loves: {$nin: ['top hats', 'virgin blood']}})
+// db.find({loves: {$nin: ['top hats', 'virgin blood']}, loves: 'fancy cloaks'})
 // .exec((err, foundVampires) => {
 //   if (err) return console.log(err);
   
@@ -315,6 +315,20 @@ const vampire4 = {
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // ## REPLACE
+
+// Replace the vampire called 'Claudia' with a vampire called 'Eve'.
+// db.findOneAndUpdate(
+//   {name: 'Claudia'},
+//   {$set: {name: 'Eve',
+//           victims: 901}},
+//   {new: true},
+//   (err, replacedVampire) => {
+//     if (err) return console.log(err);
+
+//     console.log(replacedVampire);
+//     process.exit();
+//   }
+// );
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
