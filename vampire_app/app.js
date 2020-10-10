@@ -375,6 +375,21 @@ const vampire4 = {
 /////////////////////////////////////////////////
 // ## REMOVE
 
+// Remove a single document wherein the hair_color is 'brown'
+// db.findOneAndDelete({hair_color: 'brown'}, (err, deletedVampire) => {
+//   if (err) return console.log(err);
+
+//     console.log(deletedVampire);
+//     process.exit();
+// })
+
+// We found out that the vampires with the blue eyes were just fakes! Let's remove all the vampires who have blue eyes from our database.
+// db.deleteMany({eye_color: 'blue'}, (err, deletedVampires) => {
+//   if (err) return console.log(err);
+
+//     console.log(deletedVampires);
+//     process.exit();
+// })
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 
