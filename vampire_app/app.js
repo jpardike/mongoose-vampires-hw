@@ -334,6 +334,43 @@ const vampire4 = {
 /////////////////////////////////////////////////
 // ## UPDATE
 
+// Update 'Eve' to have a gender of 'm'
+// db.findOneAndUpdate(
+//   {name: 'Eve'},
+//   {$set: {gender: 'm'}},
+//   {new: true},
+//   (err, replacedVampire) => {
+//     if (err) return console.log(err);
+
+//     console.log(replacedVampire);
+//     process.exit();
+//   }
+// );
+
+// Rename 'Eve's' name field to 'moniker'
+// db.findOneAndUpdate(
+//   {name: 'Eve'},
+//   {$rename: {'name': 'moniker'}},
+//   {new: true},
+//   (err, replacedVampire) => {
+//     if (err) return console.log(err);
+
+//     console.log(replacedVampire);
+//     process.exit();
+//   }
+// );
+
+// We now no longer want to categorize female gender as "f", but rather as fems. Update all females so that the they are of gender "fems".
+// db.updateMany(
+//   {gender: 'f'},
+//   {$set: {gender: 'fems'}},
+//   (err, updatedVampires) => {
+//     if (err) return console.log(err);
+
+//     console.log(updatedVampires);
+//     process.exit();
+//   }
+// );
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // ## REMOVE
