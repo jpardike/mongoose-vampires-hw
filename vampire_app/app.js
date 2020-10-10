@@ -162,6 +162,38 @@ const vampire4 = {
 /////////////////////////////////////////////////
 // ### Select by exists or does not exist
 
+// have a title property
+// db.find({title: { $exists: true }}, (err, foundVampires) => {
+//   if (err) return console.log(err);
+
+//   console.log(foundVampires);
+//   process.exit();
+// });
+
+// Does not have a victims property
+// db.find({victims: { $exists: false }}, (err, foundVampires) => {
+//   if (err) return console.log(err);
+
+//   console.log(foundVampires);
+//   process.exit();
+// });
+
+// Has title and no victims
+// db.find({title: { $exists: true }, victims: { $exists: false }}, (err, foundVampires) => {
+//   if (err) return console.log(err);
+
+//   console.log(foundVampires);
+//   process.exit();
+// });
+
+// has victims and victims are greater than 1000
+// db.find({victims: { $exists: true }, victims: { $gt: 1000 }}, (err, foundVampires) => {
+//   if (err) return console.log(err);
+
+//   console.log(foundVampires);
+//   process.exit();
+// });
+
 /////////////////////////////////////////////////
 // ### Select with OR
 
