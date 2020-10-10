@@ -236,6 +236,44 @@ const vampire4 = {
 /////////////////////////////////////////////////
 //### Select objects that match one of several values
 
+// love either frilly shirtsleeves or frilly collars
+// db.find({ $or: [{ loves: 'frilly shirtsleeves' }, { loves: 'frilly collars' }]})
+// .exec((err, foundVampires) => {
+//   if (err) return console.log(err);
+  
+//     console.log(foundVampires);
+//     process.exit();
+// });
+
+// love brooding
+// db.find({ loves: 'brooding' })
+// .exec((err, foundVampires) => {
+//   if (err) return console.log(err);
+  
+//     console.log(foundVampires);
+//     process.exit();
+// });
+
+// love at least one of the following: appearing innocent, trickery, lurking in rotting mansions, R&B music
+// db.find({ $or: [{ loves: 'appearing innocent' }, { loves: 'trickery' }, { loves: 'lurking in rotting mansions' }, { loves: 'R&B music' }]})
+// .exec((err, foundVampires) => {
+//   if (err) return console.log(err);
+  
+//     console.log(foundVampires);
+//     process.exit();
+// });
+
+// love fancy cloaks but not if they also love either top hats or virgin blood * Hint-You will also have to use $nin *
+// db.find({loves: {$nin: ['virgin blood', 'top hats']}, loves: 'fancy cloaks'})
+// .exec((err, foundVampires) => {
+//   if (err) return console.log(err);
+  
+//     console.log(foundVampires);
+//     process.exit();
+// });
+
+// 
+
 /////////////////////////////////////////////////
 //### Negative Selection
 
